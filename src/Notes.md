@@ -60,3 +60,16 @@ When update depends on previous state then use function state to ensure that you
 example: setUserInput((prevState) => {
     return {...prevState, enterdTitle: event.target.value};
 });
+
+## Lifting the State Up
+Moving data from a child component to the parent component to some parent component to either use it there or to then pass it down to some other child component.
+
+## Controlled components
+Whenever we do 2-way binding we are controlling the elements
+When we do 2-way binding we are also making the components controlled.
+It is like when data is passed from the child component to the parent component through props and is received from parent component.
+This turns ExpenseFilter as controlled component.
+It means that both the value and the changes to the value are not handled in the component itself but in the parent component
+
+## Presentational v/s stateful (Stateless v/s stateful or dumb v/s smart components):
+The component which does not have any internal state. It is just there to output some data
